@@ -57,6 +57,52 @@
           </tr>
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          
+          
+
+       <tr onmouseout="mine_stop()" onmouseover="mine_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='mine_image'>
+                <img src='Data/Vanilla_GAN_MNIST' width="160"></div>
+              <img src='Data/62800' width="160">
+            </div>
+            <script type="text/javascript">
+              function mine_start() {
+                document.getElementById('mine_image').style.opacity = "1";
+              }
+
+              function mine_stop() {
+                document.getElementById('mine_image').style.opacity = "0";
+              }
+              bias_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2006.07845">
+              <papertitle> GANs with Variational Entropy Regularizers: Applications in Mitigating the Mode-Collapse Issue</papertitle>
+            </a>
+            <br>
+            Prithviraj Dhar*, 
+            Joshua Gleason*, 
+            <strong>Hossein Souri</strong>, 
+            Carlos D. Castillo, 
+            Rama Chellappa
+            <br>
+            <em>arXiv</em>, 2020
+            <br>
+            <a href="https://arxiv.org/pdf/2006.07845.pdf">PDF</a> /
+            <a href="https://arxiv.org/abs/2006.07845">arXiv</a> /
+            <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/dhar2020adversarial.bib">bibtex</a>
+            <br>
+            <p></p>
+            <p>A novel approach called `Adversarial Gender De-biasing (AGD)' to reduce the strength of gender information in face recognition features.</p>
+          </td>
+        </tr>
+          
+          
+          
+          
  
         <tr onmouseout="bias_stop()" onmouseover="bias_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
