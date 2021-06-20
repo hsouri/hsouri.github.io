@@ -59,6 +59,58 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
           
+          
+          
+          
+       <tr onmouseout="mine_stop()" onmouseover="sleeper_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='sleep_image'>
+                <img src='Data/patched_source.png' width="160"></div>
+              <img src='Data/clean_source.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function sleeper_start() {
+                document.getElementById('sleeper_image').style.opacity = "1";
+              }
+
+              function mine_stop() {
+                document.getElementById('sleeper_image').style.opacity = "0";
+              }
+              bias_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2106.08970">
+              <papertitle> Sleeper Agent: Scalable Hidden Trigger Backdoors for Neural Networks Trained from Scratch</papertitle>
+            </a>
+            <br>
+            Hossein Souri, 
+            <strong>Hossein Souri</strong>, 
+            Micah Goldblum,
+            Liam Fowl, 
+            Rama Chellappa, 
+            Tom Goldstein
+            <br>
+            <em>arXiv</em>, 2021
+            <br>
+            <a href="https://arxiv.org/pdf/2106.08970.pdf">PDF</a> /
+            <a href="https://arxiv.org/abs/2106.08970">arXiv</a> /
+<!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
+            <br>
+            <p></p>
+            <p>
+              Typical backdoor attacks insert the trigger directly into the training data, although the presence of such an attack may be visible upon inspection. 
+              We develop a new hidden trigger attack, Sleeper Agent, which employs gradient matching, data selection, and target model re-training during the crafting process. 
+              Sleeper Agent is the first hidden trigger backdoor attack to be effective against neural networks trained from scratch. 
+              We demonstrate its effectiveness on ImageNet and in black-box settings.</p>
+          </td>
+        </tr>
+          
+          
+          
+          
+          
 
        <tr onmouseout="mine_stop()" onmouseover="mine_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
