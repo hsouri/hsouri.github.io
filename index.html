@@ -62,19 +62,19 @@
           
           
           
-       <tr onmouseout="mine_stop()" onmouseover="sleeper_start()">
+       <tr onmouseout="sleeper_stop()" onmouseover="sleeper_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
               <div class="two" id='sleep_image'>
-                <img src='Data/patched_source.png' width="160"></div>
-              <img src='Data/clean_source.png' width="160">
+                <img src='Data/clean_source.png' width="160"></div>
+              <img src='Data/patched_source.png' width="160">
             </div>
             <script type="text/javascript">
               function sleeper_start() {
                 document.getElementById('sleeper_image').style.opacity = "1";
               }
 
-              function mine_stop() {
+              function sleeper_stop() {
                 document.getElementById('sleeper_image').style.opacity = "0";
               }
               bias_stop()
@@ -85,7 +85,6 @@
               <papertitle> Sleeper Agent: Scalable Hidden Trigger Backdoors for Neural Networks Trained from Scratch</papertitle>
             </a>
             <br>
-            Hossein Souri, 
             <strong>Hossein Souri</strong>, 
             Micah Goldblum,
             Liam Fowl, 
@@ -96,6 +95,7 @@
             <br>
             <a href="https://arxiv.org/pdf/2106.08970.pdf">PDF</a> /
             <a href="https://arxiv.org/abs/2106.08970">arXiv</a> /
+            <a href="https://github.com/hsouri/Sleeper-Agent">code</a>
 <!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
             <br>
             <p></p>
