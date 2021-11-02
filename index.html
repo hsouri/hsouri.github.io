@@ -62,8 +62,57 @@
           
           
           
-          
-          
+    
+        <tr onmouseout="red_stop()" onmouseover="red_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='red_image'>
+                <img src='Data/red_before.png' width="160"></div>
+              <img src='Data/red_after.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function red_start() {
+                document.getElementById('red_image').style.opacity = "0";
+              }
+
+              function red_stop() {
+                document.getElementById('red_image').style.opacity = "1";
+              }
+              red_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2110.06802">
+              <papertitle> Identification of Attack-Specific Signatures in Adversarial Examples
+              </papertitle>
+            </a>
+            <br>
+            <strong>Hossein Souri</strong>, 
+            Pirazh Khorramshahi,
+            Chun Pong Lau,
+            Micah Goldblum,
+            Rama Chellappa, 
+            <br>
+            <em>arXiv</em>, 2021
+            <br>
+            <a href="https://arxiv.org/pdf/2110.06802.pdf">PDF</a> /
+            <a href="https://arxiv.org/abs/2110.06802">arXiv</a>
+            <!-- <a href="https://github.com/hsouri/Sleeper-Agent">code</a> -->
+<!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
+            <br>
+            <p></p>
+            <p>
+              The adversarial attack literature contains a myriad of algorithms for 
+              crafting perturbations which yield pathological behavior in neural networks. 
+              In many cases, multiple algorithms target the same tasks and even enforce the 
+              same constraints. In this work, we show that different attack algorithms produce 
+              adversarial examples which are distinct not only in their effectiveness but also 
+              in how they qualitatively affect their victims.</p>
+          </td>
+        </tr>
+
+
+
        <tr onmouseout="sleeper_stop()" onmouseover="sleeper_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
