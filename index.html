@@ -87,8 +87,104 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
 
-        
 
+
+          <tr onmouseout="cmeta_stop()" onmouseover="cmeta_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='cmeta_image'>
+                  <img src='Data/cmeta_before.png' width="160"></div>
+                <img src='Data/cmeta_after.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function cmeta_start() {
+                  document.getElementById('cmeta_image').style.opacity = "0";
+                }
+  
+                function cmeta_stop() {
+                  document.getElementById('cmeta_image').style.opacity = "1";
+                }
+                cmeta_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openreview.net/forum?id=gICys3ITSmj">
+                <papertitle> The Close Relationship Between Contrastive Learning and Meta-Learning
+                </papertitle>
+              </a>
+              <br>
+              Renkun Ni,
+              Manli Shu, 
+              <strong>Hossein Souri</strong>,
+              Micah Goldblum, 
+              Tom Goldstein
+              <br>
+              <em>ICLR</em>, 2022
+              <br>
+              <a href="https://openreview.net/pdf?id=gICys3ITSmj">PDF</a> /
+              <a href="https://openreview.net/forum?id=gICys3ITSmj">arXiv</a> /
+              <a href="https://github.com/RenkunNi/MetaContrastive">code</a>
+  <!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
+              <br>
+              <p></p>
+              <p>
+                In this paper, we discuss the close relationship between contrastive learning and meta-learning under a certain task distribution. We complement 
+                this observation by showing that established meta-learning methods,
+                such as Prototypical Networks, achieve comparable performance to SimCLR
+                when paired with this task distribution.</p>
+            </td>
+          </tr>
+
+
+          <tr onmouseout="deepdive_stop()" onmouseover="deepdive_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='deepdive_image'>
+                  <img src='Data/deepdive_before.png' width="160"></div>
+                <img src='Data/deepdive_after.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function deepdive_start() {
+                  document.getElementById('deepdive_image').style.opacity = "0";
+                }
+  
+                function deepdive_stop() {
+                  document.getElementById('deepdive_image').style.opacity = "1";
+                }
+                deepdive_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2203.08235">
+                <papertitle> A Deep Dive into Dataset Imbalance and Bias in Face Identification
+                </papertitle>
+              </a>
+              <br>
+              Valeriia Cherepanova, 
+              Steven Reich, 
+              Samuel Dooley, 
+              <strong>Hossein Souri</strong>,   
+              Micah Goldblum, 
+              Tom Goldstein
+              Jiang Liu, 
+              Chun Pong Lau, 
+              <br>
+              <em>arXiv</em>, 2022
+              <br>
+              <a href="https://arxiv.org/pdf/2203.08235.pdf">PDF</a> /
+              <a href="https://arxiv.org/abs/2203.08235">arXiv</a>
+              <!-- <a href="https://github.com/hsouri/Sleeper-Agent">code</a> -->
+  <!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
+              <br>
+              <p></p>
+              <p>
+                In this paper, we explore the effects of each kind of
+                imbalance possible in face identification, and discuss other factors which may impact bias in this
+                setting.</p>
+            </td>
+          </tr>
+
+          
 
         <tr onmouseout="mat_stop()" onmouseover="mat_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
