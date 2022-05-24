@@ -87,14 +87,63 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
 
+        
 
-        <tr onmouseout="ijsat_close()" onmouseover="ijsat_start()">
+
+        <tr onmouseout="mat_stop()" onmouseover="mat_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='mat_image'>
+                <img src='Data/mat_before.png' width="160"></div>
+              <img src='Data/mat_after.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function mat_start() {
+                document.getElementById('mat_image').style.opacity = "0";
+              }
+
+              function mat_stop() {
+                document.getElementById('mat_image').style.opacity = "1";
+              }
+              mat_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2112.05005">
+              <papertitle> Mutual Adversarial Training: Learning together is better than going alone
+              </papertitle>
+            </a>
+            <br>
+            Jiang Liu, 
+            Chun Pong Lau, 
+            <strong>Hossein Souri</strong>,  
+            Soheil Feizi, 
+            Rama Chellappa
+            <br>
+            <em>arXiv</em>, 2021
+            <br>
+            <a href="https://arxiv.org/pdf/2112.05005.pdf">PDF</a> /
+            <a href="https://arxiv.org/abs/2112.05005">arXiv</a>
+            <!-- <a href="https://github.com/hsouri/Sleeper-Agent">code</a> -->
+<!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
+            <br>
+            <p></p>
+            <p>
+              In this paper, we propose mutual adversarial training (MAT), in which multiple models are trained
+              together and share the knowledge of adversarial examples to achieve improved robustness. 
+              MAT allows robust models to explore a larger space of adversarial samples, and
+              find more robust feature spaces and decision boundaries.</p>
+          </td>
+        </tr>
+
+
+
+        <tr onmouseout="ijsat_stop()" onmouseover="ijsat_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
               <div class="two" id='ijsat_image'>
-                <img src='Data/ijsat_before.png' width="160">
-              </div>
-                <img src='Data/ijsat_after.png' width="160">
+                <img src='Data/ijsat_before.png' width="160"></div>
+              <img src='Data/ijsat_after.png' width="160">
             </div>
             <script type="text/javascript">
               function ijsat_start() {
@@ -108,7 +157,7 @@
             </script>
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://arxiv.org/abs/2112.06323.pdf">
+            <a href="https://arxiv.org/abs/2112.06323">
               <papertitle> Interpolated Joint Space Adversarial Training for Robust and Generalizable Defenses
               </papertitle>
             </a>
@@ -118,11 +167,11 @@
             <strong>Hossein Souri</strong>, 
             Wei-An Lin,
             Soheil Feizi,
-            Rama Chellappa, 
+            Rama Chellappa
             <br>
             <em>arXiv</em>, 2021
             <br>
-            <a href="https://arxiv.org/abs/2112.06323.pdf">PDF</a> /
+            <a href="https://arxiv.org/pdf/2112.06323.pdf">PDF</a> /
             <a href="https://arxiv.org/abs/2112.06323">arXiv</a>
             <!-- <a href="https://github.com/hsouri/Sleeper-Agent">code</a> -->
 <!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
@@ -172,7 +221,7 @@
             Pirazh Khorramshahi,
             Chun Pong Lau,
             Micah Goldblum,
-            Rama Chellappa, 
+            Rama Chellappa
             <br>
             <em>arXiv</em>, 2021
             <br>
