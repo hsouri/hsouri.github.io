@@ -86,7 +86,62 @@
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
-          
+
+
+        <tr onmouseout="ijsat_close()" onmouseover="ijsat_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='ijsat_image'>
+                <img src='Data/ijsat_before.png' width="160">
+              </div>
+                <img src='Data/ijsat_after.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function ijsat_start() {
+                document.getElementById('ijsat_image').style.opacity = "0";
+              }
+
+              function ijsat_stop() {
+                document.getElementById('ijsat_image').style.opacity = "1";
+              }
+              ijsat_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2112.06323.pdf">
+              <papertitle> Interpolated Joint Space Adversarial Training for Robust and Generalizable Defenses
+              </papertitle>
+            </a>
+            <br>
+            Chun Pong Lau,
+            Jiang Liu,
+            <strong>Hossein Souri</strong>, 
+            Wei-An Lin,
+            Soheil Feizi,
+            Rama Chellappa, 
+            <br>
+            <em>arXiv</em>, 2021
+            <br>
+            <a href="https://arxiv.org/abs/2112.06323.pdf">PDF</a> /
+            <a href="https://arxiv.org/abs/2112.06323">arXiv</a>
+            <!-- <a href="https://github.com/hsouri/Sleeper-Agent">code</a> -->
+<!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
+            <br>
+            <p></p>
+            <p>
+              In this paper, we propose a novel threat model called
+              Joint Space Threat Model (JSTM), which can serve as a
+              special case of the neural perceptual threat model that does
+              not require additional relaxation to craft the corresponding adversarial attacks. 
+              We also propose Intepolated Joint Space Adversarial Training
+              (IJSAT), which applies Robust Mixup strategy and trains
+              the model with JSA samples.
+            </p>
+            </td>
+        </tr>
+
+
+
           
     
         <tr onmouseout="red_stop()" onmouseover="red_start()">
