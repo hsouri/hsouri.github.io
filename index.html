@@ -86,6 +86,58 @@
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
+          
+
+          <tr onmouseout="prior_stop()" onmouseover="prior_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='prior_image'>
+                  <img src='Data/prior_before.png' width="160"></div>
+                <img src='Data/prior_after.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function prior_start() {
+                  document.getElementById('prior_image').style.opacity = "0";
+                }
+  
+                function prior_stop() {
+                  document.getElementById('prior_image').style.opacity = "1";
+                }
+                prior_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2205.10279">
+                <papertitle> Pre-Train Your Loss: Easy Bayesian Transfer Learning with Informative Priors
+                </papertitle>
+              </a>
+              <br>
+              Ravid Shwartz-Ziv, 
+              Micah Goldblum, 
+              <strong>Hossein Souri</strong>, 
+              Sanyam Kapoor, 
+              Chen Zhu, 
+              Yann LeCun, 
+              Andrew Gordon Wilson
+              <br>
+              <em>arXiv</em>, 2022
+              <br>
+              <a href="https://arxiv.org/pdf/2205.10279.pdf">PDF</a> /
+              <a href="https://arxiv.org/abs/2205.10279">arXiv</a> /
+              <a href="https://github.com/hsouri/BayesianTransferLearning">code</a>
+  <!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
+              <br>
+              <p></p>
+              <p>
+                Our Bayesian transfer learning framework transfers knowledge from pre-training 
+                to downstream tasks. To up-weight parameter settings consistent with a 
+                pre-training loss function, we fit a probability distribution over the 
+                parameters of feature extractors to a pre-training loss function and rescale 
+                it as a prior.</p>
+            </td>
+          </tr>
+
+
 
 
 
