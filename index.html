@@ -140,6 +140,53 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               
+              <tr onmouseout="bob_stop()" onmouseover="bob_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='bob_image'>
+                      <img src='Data/bob.jpg' width="160">
+                    </div>
+                    <img src='Data/bob.jpg' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function bob_start() {
+                      document.getElementById('bob_image').style.opacity = "0";
+                    }
+
+                    function bob_stop() {
+                      document.getElementById('bob_image').style.opacity = "1";
+                    }
+                    bob_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2310.19909">
+                    <papertitle> Battle of the Backbones: A Large-Scale Comparison of
+                      Pretrained Models across Computer Vision Tasks
+                    </papertitle>
+                  </a>
+                  <br>
+                  Micah Goldblum*, <strong>Hossein Souri*</strong>, Renkun Ni, Manli Shu, Viraj Prabhu, 
+                  Gowthami Somepalli, Prithvijit Chattopadhyay, Mark Ibrahim, Adrien Bardes, 
+                  Judy Hoffman, Rama Chellappa, Andrew Gordon Wilson, Tom Goldstein
+                  <br>
+                  <font color="red"><strong><em>NeurIPS</em>, 2023</strong></font>
+                  <br>
+                  <a href="https://arxiv.org/pdf/2310.19909.pdf">PDF</a> /
+                  <a href="https://arxiv.org/abs/2310.19909">arXiv</a> /
+                  <a href="https://github.com/hsouri/Battle-of-the-Backbones">code</a>
+                  <br>
+                  <p></p>
+                  <p>
+                  Battle of the Backbones (BoB) is a large-scale comparison of pretrained vision backbones 
+                  including SSL, vision-language models, and CNNs vs ViTs across diverse downstream tasks 
+                  including classification, object detection, segmentation, out-of-distribution (OOD) generalization, 
+                  and image retrieval.
+                  </p>
+                </td>
+              </tr>
+
+              
 
               <tr onmouseout="ijsat_stop()" onmouseover="ijsat_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
@@ -176,7 +223,7 @@
                   <font color="red"><strong><em>TPAMI</em></strong></font>
                   <br>
                   <a href="https://ieeexplore.ieee.org/abstract/document/10155464/?casa_token=GHUaNLvLQeAAAAAA:IVLO-LH6zQoDTzAhBVQB4isDnu-MhvKtAXPyR3M_rVhsHr33rjru-p3syfWURrJrMABdL-nLjQ">PDF</a> /
-                  <a href="https://arxiv.org/abs/2112.06323">arXiv</a>
+                  <a href="https://arxiv.org/abs/2112.06323">arXiv</a> 
                   <!-- <a href="https://github.com/hsouri/Sleeper-Agent">code</a> -->
                   <!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
                   <br>
@@ -269,9 +316,9 @@
                   </a>
                   <br>
                   <strong>Hossein Souri</strong>,
-                  Micah Goldblum,
                   Liam Fowl,
                   Rama Chellappa,
+                  Micah Goldblum,
                   Tom Goldstein
                   <br>
                   <font color="red"><strong><em>NeurIPS</em>, 2022</strong></font>
