@@ -29,7 +29,17 @@
                     <name>Hossein Souri</name>
                   </p>
                   <p>
-                    I am PhD student in Computer Science at Johns Hopkins
+                    
+                    I am a PhD candidate in Computer Science at Johns Hopkins University, where I have the privilege of being supervised by 
+                    Bloomberg Distinguished Professor <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/"><b>Rama Chellappa</b></a>. 
+                    My research is further enhanced by significant collaborations with 
+                    Tom Goldstein, Micah Goldblum, and Soheil Feizi at the University of Maryland, as well as with Andrew Gordon Wilson and Yann LeCun from NYU and Meta. 
+                    <p></p>
+                    I'm a Graduate Reseach Assistant at Artificial Intelligence for Engineering and Medicine Lab (AIEM). 
+                    Before joining JHU, I obtained my MS in Electrical and Computer Engineering from University of Maryland, College Park. 
+                    During my Masters studies, I was a research assistant at University of Maryland Institute for Advanced Computer Studies (UMIACS).
+
+                    <!-- I am PhD student in Computer Science at Johns Hopkins
                     University.
                     I'm pleased to be advised by <a
                       href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/"><b>Prof. Rama Chellappa</b></a> and
@@ -40,7 +50,7 @@
                     Before joining JHU, I obtained my M.S. and B.S. in Electrical and Computer Engineering from
                     University of Maryland, College Park and University of Tehran
                     respectively. During my Masters studies I was a reseach assistant at University of
-                    Maryland Institute for Advanced Computer Studies (<a href="https://www.umiacs.umd.edu/">UMIACS</a>).
+                    Maryland Institute for Advanced Computer Studies (<a href="https://www.umiacs.umd.edu/">UMIACS</a>). -->
 
                   </p>
                   <p style="text-align:center">
@@ -62,12 +72,17 @@
 
 
 
-
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
             <tr>
               <td width="100%" valign="middle">
                 <heading>News</heading>
                 <!-- <br /> -->
+
+                <ul>
+                  <li><b>Jan-2024:</b> One paper accepted to IEEE ICASSP 2024. </li>
+                </ul>
+
+
                 <ul>
                   <li><b>Sep-2023:</b> One paper accepted to NeurIPS 2023. </li>
                 </ul>
@@ -125,12 +140,10 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>Research</heading>
                   <p>
-                    My primary research is applied machine learning in computer vision,
-                    with the goal of improving the robustness and performance of vision
-                    systems such as image/face/video recognition, object detection/tracking,
-                    segmentation, and generative models. Those include adversarial attacks and
-                    defenses, data poisoning, and backdoor attacks, as well as transfer learning,
-                    self-supervised learning, image restoration, and fairness in face recognition.
+                    My primary research is applied machine learning and computer vision, focusing on improving the robustness, 
+                    transferability, and performance of image/face/video classifiers, object detection/segmentation, and generative models. 
+                    Those include adversarial robustness, transfer learning, self-supervised learning, generative models, as well as, 
+                    data poisoning and backdoor attacks.
 
                   </p>
                 </td>
@@ -140,6 +153,103 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               
+
+              <tr onmouseout="bob_stop()" onmouseover="bob_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='bob_image'>
+                      <img src='Data/GDP_1.jpg' width="160">
+                    </div>
+                    <img src='Data/GDP_2.jpg' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function bob_start() {
+                      document.getElementById('bob_image').style.opacity = "0";
+                    }
+
+                    function bob_stop() {
+                      document.getElementById('bob_image').style.opacity = "1";
+                    }
+                    bob_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2310.19909">
+                    <papertitle> Generating Potent Poisons and Backdoors from Scratch with Guided Diffusion
+                    </papertitle>
+                  </a>
+                  <br>
+                  <strong>Hossein Souri</strong>, Arpit Bansal, Hamid Kazemi, Liam Fowl, Aniruddha Saha, Jonas Geiping, 
+                  Andrew Gordon Wilson, Rama Chellappa, Tom Goldstein, Micah Goldblum
+                  <br>
+                  2024
+                  <br>
+                  <a href="https://arxiv.org/pdf/2403.16365.pdf">PDF</a> /
+                  <a href="https://arxiv.org/abs/2403.16365">arXiv</a> /
+                  <a href="https://github.com/hsouri/GDP">code</a>
+                  <br>
+                  <p></p>
+                  <p>
+                    In this work, we use guided diffusion
+                    to synthesize base samples from scratch that lead to significantly more potent
+                    poisons and backdoors than previous state-of-the-art attacks. Our Guided Diffusion Poisoning (GDP) base samples can be combined with any downstream
+                    poisoning or backdoor attack to boost its effectiveness.
+                  </p>
+                </td>
+              </tr>
+
+              
+              <tr onmouseout="red_stop()" onmouseover="red_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='red_image'>
+                      <img src='Data/red_before.png' width="160">
+                    </div>
+                    <img src='Data/red_after.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function red_start() {
+                      document.getElementById('red_image').style.opacity = "0";
+                    }
+
+                    function red_stop() {
+                      document.getElementById('red_image').style.opacity = "1";
+                    }
+                    red_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2110.06802">
+                    <papertitle> Identification of Attack-Specific Signatures in Adversarial Examples
+                    </papertitle>
+                  </a>
+                  <br>
+                  <strong>Hossein Souri</strong>,
+                  Pirazh Khorramshahi,
+                  Chun Pong Lau,
+                  Micah Goldblum,
+                  Rama Chellappa
+                  <br>
+                  <em>IEEE ICASSP</em>, 2024
+                  <br>
+                  <a href="https://arxiv.org/pdf/2110.06802.pdf">PDF</a> /
+                  <a href="https://arxiv.org/abs/2110.06802">arXiv</a>
+                  <!-- <a href="https://github.com/hsouri/Sleeper-Agent">code</a> -->
+                  <!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
+                  <br>
+                  <p></p>
+                  <p>
+                    The adversarial attack literature contains a myriad of algorithms for
+                    crafting perturbations which yield pathological behavior in neural networks.
+                    In many cases, multiple algorithms target the same tasks and even enforce the
+                    same constraints. In this work, we show that different attack algorithms produce
+                    adversarial examples which are distinct not only in their effectiveness but also
+                    in how they qualitatively affect their victims.</p>
+                </td>
+              </tr>
+
+
+
               <tr onmouseout="bob_stop()" onmouseover="bob_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -498,58 +608,6 @@
 
 
 
-              <tr onmouseout="red_stop()" onmouseover="red_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='red_image'>
-                      <img src='Data/red_before.png' width="160">
-                    </div>
-                    <img src='Data/red_after.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function red_start() {
-                      document.getElementById('red_image').style.opacity = "0";
-                    }
-
-                    function red_stop() {
-                      document.getElementById('red_image').style.opacity = "1";
-                    }
-                    red_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2110.06802">
-                    <papertitle> Identification of Attack-Specific Signatures in Adversarial Examples
-                    </papertitle>
-                  </a>
-                  <br>
-                  <strong>Hossein Souri</strong>,
-                  Pirazh Khorramshahi,
-                  Chun Pong Lau,
-                  Micah Goldblum,
-                  Rama Chellappa
-                  <br>
-                  <em>arXiv</em>, 2021
-                  <br>
-                  <a href="https://arxiv.org/pdf/2110.06802.pdf">PDF</a> /
-                  <a href="https://arxiv.org/abs/2110.06802">arXiv</a>
-                  <!-- <a href="https://github.com/hsouri/Sleeper-Agent">code</a> -->
-                  <!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
-                  <br>
-                  <p></p>
-                  <p>
-                    The adversarial attack literature contains a myriad of algorithms for
-                    crafting perturbations which yield pathological behavior in neural networks.
-                    In many cases, multiple algorithms target the same tasks and even enforce the
-                    same constraints. In this work, we show that different attack algorithms produce
-                    adversarial examples which are distinct not only in their effectiveness but also
-                    in how they qualitatively affect their victims.</p>
-                </td>
-              </tr>
-
-
-
-
               <tr onmouseout="mine_stop()" onmouseover="mine_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -770,7 +828,7 @@
                         This theme has been stolen from <a href="https://jonbarron.info/">Jon Barron's website </a> :-|
                       </p>
                       <p style="text-align:center;font-size:small;">
-                        Last update: September, 2023</p>
+                        Last update: March, 2024</p>
 
                       <!-- hitwebcounter Code START -->
                       <!-- Started from 1450-->
