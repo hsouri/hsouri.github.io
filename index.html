@@ -1,887 +1,256 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Hossein Souri</title>
-
-  <meta name="author" content="Jon Barron">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hossein Souri</title>
+  <meta name="author" content="Hossein Souri">
+  <meta name="description"
+    content="Hossein Souri — Senior AI Researcher at Samsung Research America. PhD, Johns Hopkins. Research on multimodal and generative AI, vision-language models, and efficient AI for edge devices.">
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/jpg" href="Data/profile_face.png">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hossein Souri">
+  <meta property="og:description"
+    content="Senior AI Researcher at Samsung Research America. Multimodal & generative AI, vision-language models, efficient AI for edge devices.">
+  <meta property="og:image" content="Data/profile_opt.jpg">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" type="image/jpeg" href="Data/profile_opt.jpg">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- set theme before paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
 </head>
 
-
 <body>
-  <table
-    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr style="padding:0px">
-                <td style="padding:2.5%;width:63%;vertical-align:middle">
-                  <p style="text-align:center">
-                    <name>Hossein Souri</name>
-                  </p>
-                  <p>
 
-                    I am a Senior AI Researcher at Samsung Research America, where my research focuses on advancing multimodal understanding, editing, and generation for edge devices. My research aims to push the boundaries of AI by optimizing performance in resource-constrained environments.
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="brand">Hossein Souri</a>
+      <div class="nav-links">
+        <a href="#research">About</a>
+        <a href="#publications">Publications</a>
+        <a class="cv-pill" href="Data/Hossein_Souri_CV.pdf">CV</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <span id="top"></span>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Senior AI Researcher</div>
+        <h1>Hossein Souri</h1>
+        <p class="role"><span class="org">Samsung Research America</span> &nbsp;·&nbsp; PhD, Johns Hopkins University</p>
+        <p class="tagline">Advancing vision-language understanding, generation, and reasoning.</p>
+
+        <div class="tags">
+          <span class="tag">Vision Language Models</span>
+          <span class="tag">Diffusion Models</span>
+          <span class="tag">Vision Language Action Models</span>
+          <span class="tag">World Models</span>
+          <span class="tag">Long Horizon Planning</span>
+        </div>
+
+        <div class="links">
+          <a class="primary icon" href="mailto:hossein.souri95@gmail.com" aria-label="Email" title="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></a>
+          <a class="icon" href="https://scholar.google.com/citations?user=rurbhy0AAAAJ&hl=en" aria-label="Google Scholar" title="Google Scholar">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2v3.3L12 20l7-3.5v-3.3L12 17l-7-3.8z"/></svg></a>
+          <a class="icon" href="https://github.com/hsouri" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg></a>
+          <a class="icon" href="https://www.linkedin.com/in/hossein-souri-b7574795/" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5zM3 9h4v12H3zM9 9h3.8v1.64h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.35c0-1.28-.02-2.92-1.78-2.92-1.78 0-2.05 1.39-2.05 2.83V21H9z"/></svg></a>
+          <a class="icon" href="https://twitter.com/HosseinSouri8" aria-label="X" title="X">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.5 8.6L23 22h-6.8l-5.3-6.9L4.8 22H1.6l8-9.2L1 2h7l4.8 6.3zm-2.4 18h1.9L7.6 4H5.6z"/></svg></a>
+          <a href="Data/Hossein_Souri_CV.pdf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15h6"/></svg>
+            CV</a>
+        </div>
+      </div>
+
+      <img class="portrait" src="Data/profile_opt.jpg" srcset="Data/profile_opt.jpg 1x, Data/profile_opt@2x.jpg 2x"
+        width="280" height="280" alt="Hossein Souri" fetchpriority="high">
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- ===================== ABOUT / RESEARCH ===================== -->
+    <section id="research" class="reveal">
+      <div class="section-head"><h2>About</h2></div>
+      <p class="lead">
+        I am a Senior AI Researcher in the Vision Intelligence Team at the AI Center,
+        <a href="https://sra.samsung.com">Samsung Research America</a>, where my work focuses on advancing
+        vision-language understanding, generation, and reasoning. More recently, I have been focusing on long horizon
+        planning, vision language action (VLA) models, and world models.
+      </p>
+      <p class="lead muted">
+        I earned my PhD in Computer Science from Johns Hopkins University, advised by Bloomberg Distinguished Professor
+        <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">Rama Chellappa</a>, and completed my Master's
+        at the University of Maryland, College Park, where I collaborated closely with
+        <a href="https://www.cs.umd.edu/~tomg/">Tom Goldstein</a>. My past work spans generative models, vision-language
+        models, and representation learning.
+      </p>
+    </section>
+
+    <!-- ===================== PUBLICATIONS ===================== -->
+    <section id="publications" class="reveal">
+      <div class="section-head"><h2>Selected Publications</h2><span class="count">* equal contribution</span></div>
+      <p class="lead muted" style="margin-top:-12px">See my <a href="https://scholar.google.com/citations?user=rurbhy0AAAAJ&hl=en">Google Scholar</a> for the full list of publications.</p>
+      <div class="pubs">
+
+        <!-- Battle of the Backbones -->
+        <article class="pub">
+          <img class="pub-thumb" src="Data/bob.jpg" loading="lazy" alt="">
+          <div class="pub-body">
+            <a href="https://arxiv.org/abs/2310.19909"><span class="pub-title">Battle of the Backbones: A Large-Scale Comparison of Pretrained Models across Computer Vision Tasks</span></a><span class="venue">NeurIPS 2023</span>
+            <p class="authors">Micah Goldblum*, <span class="me">Hossein Souri*</span>, Renkun Ni, Manli Shu, Viraj Prabhu, Gowthami Somepalli, Prithvijit Chattopadhyay, Mark Ibrahim, Adrien Bardes, Judy Hoffman, Rama Chellappa, Andrew Gordon Wilson, Tom Goldstein</p>
+            <p class="pub-meta">Neural Information Processing Systems, 2023</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/pdf/2310.19909.pdf">PDF</a>
+              <a href="https://arxiv.org/abs/2310.19909">arXiv</a>
+              <a href="https://github.com/hsouri/Battle-of-the-Backbones">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sleeper Agent -->
+        <article class="pub">
+          <img class="pub-thumb" src="Data/patched_source.png" loading="lazy" alt="">
+          <div class="pub-body">
+            <a href="https://arxiv.org/abs/2106.08970"><span class="pub-title">Sleeper Agent: Scalable Hidden Trigger Backdoors for Neural Networks Trained from Scratch</span></a><span class="venue">NeurIPS 2022</span>
+            <p class="authors"><span class="me">Hossein Souri</span>, Liam Fowl, Rama Chellappa, Micah Goldblum, Tom Goldstein</p>
+            <p class="pub-meta">Neural Information Processing Systems, 2022</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/pdf/2106.08970.pdf">PDF</a>
+              <a href="https://arxiv.org/abs/2106.08970">arXiv</a>
+              <a href="https://github.com/hsouri/Sleeper-Agent">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Pre-Train Your Loss -->
+        <article class="pub">
+          <img class="pub-thumb" src="Data/prior_after.png" loading="lazy" alt="">
+          <div class="pub-body">
+            <a href="https://arxiv.org/abs/2205.10279"><span class="pub-title">Pre-Train Your Loss: Easy Bayesian Transfer Learning with Informative Priors</span></a><span class="venue">NeurIPS 2022</span>
+            <p class="authors">Ravid Shwartz-Ziv, Micah Goldblum, <span class="me">Hossein Souri</span>, Sanyam Kapoor, Chen Zhu, Yann LeCun, Andrew Gordon Wilson</p>
+            <p class="pub-meta">Neural Information Processing Systems, 2022</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/pdf/2205.10279.pdf">PDF</a>
+              <a href="https://arxiv.org/abs/2205.10279">arXiv</a>
+              <a href="https://github.com/hsouri/BayesianTransferLearning">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- GDP -->
+        <article class="pub">
+          <img class="pub-thumb" src="Data/GDP_1.jpg" loading="lazy" alt="">
+          <div class="pub-body">
+            <a href="https://arxiv.org/abs/2403.16365"><span class="pub-title">Generating Potent Poisons and Backdoors from Scratch with Guided Diffusion</span></a><span class="venue oral">ICML&nbsp;Workshop · Oral</span>
+            <p class="authors"><span class="me">Hossein Souri</span>, Arpit Bansal, Hamid Kazemi, Liam Fowl, Aniruddha Saha, Jonas Geiping, Andrew Gordon Wilson, Rama Chellappa, Tom Goldstein, Micah Goldblum</p>
+            <p class="pub-meta">ICML Workshop on the Next Generation of AI Safety, 2024</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/pdf/2403.16365.pdf">PDF</a>
+              <a href="https://arxiv.org/abs/2403.16365">arXiv</a>
+              <a href="https://github.com/hsouri/GDP">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Contrastive / Meta -->
+        <article class="pub">
+          <img class="pub-thumb" src="Data/cmeta_after.png" loading="lazy" alt="">
+          <div class="pub-body">
+            <a href="https://openreview.net/pdf?id=gICys3ITSmj"><span class="pub-title">The Close Relationship Between Contrastive Learning and Meta-Learning</span></a><span class="venue">ICLR 2022</span>
+            <p class="authors">Renkun Ni, Manli Shu, <span class="me">Hossein Souri</span>, Micah Goldblum, Tom Goldstein</p>
+            <p class="pub-meta">International Conference on Learning Representations, 2022</p>
+            <div class="pub-links">
+              <a href="https://openreview.net/pdf?id=gICys3ITSmj">PDF</a>
+              <a href="https://github.com/RenkunNi/MetaContrastive">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ATFaceGAN -->
+        <article class="pub">
+          <img class="pub-thumb" src="Data/atface_after.png" loading="lazy" alt="">
+          <div class="pub-body">
+            <a href="https://ieeexplore.ieee.org/abstract/document/9320151"><span class="pub-title">ATFaceGAN: Single Face Image Restoration and Recognition from Atmospheric Turbulence</span></a><span class="venue oral">IEEE FG 2019 · Oral</span>
+            <p class="authors">Chun Pong Lau, <span class="me">Hossein Souri</span>, Rama Chellappa</p>
+            <p class="pub-meta">IEEE FG, 2019 — Best Paper (Honorable Mention)</p>
+            <div class="pub-links">
+              <a href="https://ieeexplore.ieee.org/abstract/document/9320151">IEEE</a>
+              <a href="https://arxiv.org/pdf/1910.03119.pdf">PDF</a>
+              <a href="https://arxiv.org/abs/1910.03119">arXiv</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="foot-links">
+      <a href="mailto:hossein.souri95@gmail.com">Email</a>
+      <a href="https://scholar.google.com/citations?user=rurbhy0AAAAJ&hl=en">Scholar</a>
+      <a href="https://github.com/hsouri">GitHub</a>
+      <a href="https://www.linkedin.com/in/hossein-souri-b7574795/">LinkedIn</a>
+      <a href="Data/Hossein_Souri_CV.pdf">CV</a>
+    </div>
+    <div>© <span id="year"></span> Hossein Souri</div>
+  </footer>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script>
+    // theme toggle
+    document.getElementById('themeToggle').addEventListener('click', function () {
+      var cur = document.documentElement.getAttribute('data-theme');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+
+    // current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // reveal on scroll
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  </script>
 
-                    <p>
-                    I earned my PhD in Computer Science from Johns Hopkins University under the supervision of 
-                    Bloomberg Distinguished Professor <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/"><b>Rama Chellappa</b></a>. 
-                    Prior to that, I completed my Master’s degree at the University of Maryland, College Park. 
-                    Throughout my research, I collaborated closely with Tom Goldstein, 
-                    Micah Goldblum, and Soheil Feizi at the University of Maryland, as well as Andrew Gordon Wilson 
-                    and Yann LeCun from NYU and Meta.
-                    </p>
-
-                    <!-- I completed my PhD in Computer Science at Johns Hopkins University under supervision of Bloomberg Distinguished Professor <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/"><b>Rama Chellappa</b></a>. 
-                    I previously earned my Master’s degree from the University of Maryland, College Park. During my PhD I had significant collaborations with 
-                    Tom Goldstein, Micah Goldblum, and Soheil Feizi at the University of Maryland, as well as with Andrew Gordon Wilson and Yann LeCun from NYU and Meta. -->
-                    
-                    <!-- <p></p>
-                    My research generally focuses on generative AI, multimodal learning, responsible and safe AI, transfer learning, and 2D computer vision. I have published multiple papers in top-tier 
-                    conferences and journals, such as NeurIPS, ICLR, ICML, ICASSP, and TPAMI.
-                    <p></p>
-                    I'm a Graduate Reseach Assistant at Artificial Intelligence for Engineering and Medicine Lab (AIEM). 
-                    Before joining JHU, I obtained my MS in Electrical and Computer Engineering from University of Maryland, College Park. 
-                    During my Masters studies, I was a research assistant at University of Maryland Institute for Advanced Computer Studies (UMIACS). -->
-
-                    <!-- I am PhD student in Computer Science at Johns Hopkins
-                    University.
-                    I'm pleased to be advised by <a
-                      href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/"><b>Prof. Rama Chellappa</b></a> and
-                    <a href="https://www.cs.umd.edu/~tomg/"><b>Prof. Tom Goldstein</b></a>. I'm
-                    a Graduate Reseach Assistant at Artificial Intelligence for
-                    Engineering and Medicine Lab (<a href="https://aiem.jhu.edu/">AIEM</a>).
-                  <p>
-                    Before joining JHU, I obtained my M.S. and B.S. in Electrical and Computer Engineering from
-                    University of Maryland, College Park and University of Tehran
-                    respectively. During my Masters studies I was a reseach assistant at University of
-                    Maryland Institute for Advanced Computer Studies (<a href="https://www.umiacs.umd.edu/">UMIACS</a>). -->
-
-                  </p>
-                  <p style="text-align:center">
-                    <a href="mailto:h.souri@samsung.com">Email</a> &nbsp/&nbsp
-                    <a href="https://scholar.google.com/citations?user=rurbhy0AAAAJ&hl=en">Google Scholar</a>
-                    &nbsp/&nbsp
-                    <a href="https://github.com/hsouri">GitHub</a> &nbsp/&nbsp
-                    <a href="https://twitter.com/HosseinSouri8">Twitter</a> &nbsp/&nbsp
-                    <a href="https://www.linkedin.com/in/hossein-souri-b7574795/">LinkedIn</a> &nbsp/&nbsp
-                    <a href="Data/Hossein_Souri_CV.pdf">CV</a>
-                  </p>
-                </td>
-                <td style="padding:2.5%;width:40%;max-width:40%">
-                  <a href="Data/profile_circle_comp.png"><img style="width:100%;max-width:100%" alt="profile photo"
-                      src="Data/profile_circle_comp.png" class="hoverZoomLink"></a>
-                </td>
-              </tr>
-          </table>
-
-
-
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tr>
-              <td width="100%" valign="middle">
-                <heading>News</heading>
-                <!-- <br /> -->
-
-                <ul>
-                  <li><b>Sept-2024:</b> I joined Samsung Research America as a Senior AI Researcher! </li>
-                </ul>
-
-                <ul>
-                  <li><b>Sept-2024:</b> I successfully defended my PhD dissertation! </li>
-                </ul>
-
-
-                <ul>
-                  <li><b>July-2024:</b> <a href="https://arxiv.org/abs/2403.16365">GDP</a> has been selected for oral presentation at the NextGenAISafety workshop at ICML 2024. </li>
-                </ul>
-
-                <ul>
-                  <li><b>June-2024:</b> One paper accepted to ICML 2024 Workshop on the Next Generation of AI Safety. </li>
-                </ul>
-
-                <ul>
-                  <li><b>Jan-2024:</b> One paper accepted to IEEE ICASSP 2024. </li>
-                </ul>
-
-                <ul>
-                  <li><b>Sept-2023:</b> One paper accepted to NeurIPS 2023. </li>
-                </ul>
-
-                <ul>
-                  <li><b>June-2023:</b> One paper accepted to TPAMI. </li>
-                </ul>
-
-                <ul>
-                  <li><b>May-2023:</b> One papers accepted to AAAI/ACM Conference on AI, Ethics, and Society 2023. </li>
-                </ul>
-
-                <ul>
-
-                  <li>
-                    <b>Sept-2022:</b> Two papers accepted to NeurIPS
-                    2022.
-                  </li>
-                </ul>
-
-                <ul>
-                  <li><b>July-2022:</b> Three papers accepted to ICML 2022 Workshops. </li>
-                </ul>
-
-                <ul>
-                  <li><b>June-2022:</b> One paper accepted to IEEE TIFS. </li>
-                  <!-- <a href="https://ieeexplore.ieee.org/abstract/document/9798870">Link</a>  -->
-                </ul>
-
-                <ul>
-                  <li><b>Jan-2022:</b> One paper accepted to ICLR 2022. </li>
-                  <!-- <a href="https://openreview.net/pdf?id=gICys3ITSmj">Link</a>  -->
-
-                </ul>
-
-                <ul>
-                  <li><b>Nov-2020:</b> One <b>oral</b> paper accepted to IEEE FG 2020 with best paper (Honorable
-                    Mention) award. </li>
-                  <!-- <a href="https://ieeexplore.ieee.org/document/9320151">Link</a> -->
-                </ul>
-
-
-              </td>
-            </tr>
-          </table>
-
-
-
-
-
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Research</heading>
-                  <p>
-                    My primary research focuses on Multimodal and generative AI. 
-
-                  <p>
-                    Previously, I have worked on areas such as adversarial robustness, diffusion models, GANs, vision-language models, object detection and segmentation, as well as data poisoning and backdoor attacks.
-                  </p>
-
-                  </p>
-                </td>
-              </tr>
-          </table>
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              
-
-              <tr onmouseout="bob_stop()" onmouseover="bob_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='bob_image'>
-                      <img src='Data/GDP_1.jpg' width="160">
-                    </div>
-                    <img src='Data/GDP_2.jpg' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function bob_start() {
-                      document.getElementById('bob_image').style.opacity = "0";
-                    }
-
-                    function bob_stop() {
-                      document.getElementById('bob_image').style.opacity = "1";
-                    }
-                    bob_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2403.16365">
-                    <papertitle> Generating Potent Poisons and Backdoors from Scratch with Guided Diffusion
-                    </papertitle>
-                  </a>
-                  <br>
-                  <strong>Hossein Souri</strong>, Arpit Bansal, Hamid Kazemi, Liam Fowl, Aniruddha Saha, Jonas Geiping, 
-                  Andrew Gordon Wilson, Rama Chellappa, Tom Goldstein, Micah Goldblum
-                  <br>
-                  <em>ICML Workshop on the Next Generation of AI Safety</em>, 2024
-                  <font color="red"><strong>(Oral Presentation)</strong></font>
-                  <br>
-                  <a href="https://arxiv.org/pdf/2403.16365.pdf">PDF</a> /
-                  <a href="https://arxiv.org/abs/2403.16365">arXiv</a> /
-                  <a href="https://github.com/hsouri/GDP">code</a>
-                  <br>
-                  <p></p>
-                  <p>
-                    In this work, we use guided diffusion
-                    to synthesize base samples from scratch that lead to significantly more potent
-                    poisons and backdoors than previous state-of-the-art attacks. Our Guided Diffusion Poisoning (GDP) base samples can be combined with any downstream
-                    poisoning or backdoor attack to boost its effectiveness.
-                  </p>
-                </td>
-              </tr>
-
-              
-              <tr onmouseout="red_stop()" onmouseover="red_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='red_image'>
-                      <img src='Data/red_before.png' width="160">
-                    </div>
-                    <img src='Data/red_after.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function red_start() {
-                      document.getElementById('red_image').style.opacity = "0";
-                    }
-
-                    function red_stop() {
-                      document.getElementById('red_image').style.opacity = "1";
-                    }
-                    red_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://ieeexplore.ieee.org/abstract/document/10446989">
-                    <papertitle> Identifying Attack-Specific Signatures in Adversarial Examples
-                    </papertitle>
-                  </a>
-                  <br>
-                  <strong>Hossein Souri</strong>,
-                  Pirazh Khorramshahi,
-                  Chun Pong Lau,
-                  Micah Goldblum,
-                  Rama Chellappa
-                  <br>
-                  <em>IEEE ICASSP</em>, 2024
-                  <br>
-                  <a href="https://ieeexplore.ieee.org/abstract/document/10446989 ">PDF</a> /
-                  <a href="https://arxiv.org/abs/2110.06802">arXiv</a>
-                  <!-- <a href="https://github.com/hsouri/Sleeper-Agent">code</a> -->
-                  <!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
-                  <br>
-                  <p></p>
-                  <p>
-                    The adversarial attack literature contains a myriad of algorithms for
-                    crafting perturbations which yield pathological behavior in neural networks.
-                    In many cases, multiple algorithms target the same tasks and even enforce the
-                    same constraints. In this work, we show that different attack algorithms produce
-                    adversarial examples which are distinct not only in their effectiveness but also
-                    in how they qualitatively affect their victims.</p>
-                </td>
-              </tr>
-
-
-
-              <tr onmouseout="bob_stop()" onmouseover="bob_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='bob_image'>
-                      <img src='Data/bob.jpg' width="160">
-                    </div>
-                    <img src='Data/bob.jpg' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function bob_start() {
-                      document.getElementById('bob_image').style.opacity = "0";
-                    }
-
-                    function bob_stop() {
-                      document.getElementById('bob_image').style.opacity = "1";
-                    }
-                    bob_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2310.19909">
-                    <papertitle> Battle of the Backbones: A Large-Scale Comparison of
-                      Pretrained Models across Computer Vision Tasks
-                    </papertitle>
-                  </a>
-                  <br>
-                  Micah Goldblum*, <strong>Hossein Souri*</strong>, Renkun Ni, Manli Shu, Viraj Prabhu, 
-                  Gowthami Somepalli, Prithvijit Chattopadhyay, Mark Ibrahim, Adrien Bardes, 
-                  Judy Hoffman, Rama Chellappa, Andrew Gordon Wilson, Tom Goldstein
-                  <br>
-                  <font color="red"><strong><em>NeurIPS</em>, 2023</strong></font>
-                  <br>
-                  <a href="https://arxiv.org/pdf/2310.19909.pdf">PDF</a> /
-                  <a href="https://arxiv.org/abs/2310.19909">arXiv</a> /
-                  <a href="https://github.com/hsouri/Battle-of-the-Backbones">code</a>
-                  <br>
-                  <p></p>
-                  <p>
-                  Battle of the Backbones (BoB) is a large-scale comparison of pretrained vision backbones 
-                  including SSL, vision-language models, and CNNs vs ViTs across diverse downstream tasks 
-                  including classification, object detection, segmentation, out-of-distribution (OOD) generalization, 
-                  and image retrieval.
-                  </p>
-                </td>
-              </tr>
-
-              
-
-              <tr onmouseout="ijsat_stop()" onmouseover="ijsat_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='ijsat_image'>
-                      <img src='Data/ijsat_before.png' width="160">
-                    </div>
-                    <img src='Data/ijsat_after.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function ijsat_start() {
-                      document.getElementById('ijsat_image').style.opacity = "0";
-                    }
-
-                    function ijsat_stop() {
-                      document.getElementById('ijsat_image').style.opacity = "1";
-                    }
-                    ijsat_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://ieeexplore.ieee.org/abstract/document/10155464/?casa_token=GHUaNLvLQeAAAAAA:IVLO-LH6zQoDTzAhBVQB4isDnu-MhvKtAXPyR3M_rVhsHr33rjru-p3syfWURrJrMABdL-nLjQ">
-                    <papertitle> Interpolated Joint Space Adversarial Training for Robust and Generalizable Defenses
-                    </papertitle>
-                  </a>
-                  <br>
-                  Chun Pong Lau,
-                  Jiang Liu,
-                  <strong>Hossein Souri</strong>,
-                  Wei-An Lin,
-                  Soheil Feizi,
-                  Rama Chellappa
-                  <br>
-                  <font color="red"><strong><em>TPAMI</em></strong></font>
-                  <br>
-                  <a href="https://ieeexplore.ieee.org/abstract/document/10155464/?casa_token=GHUaNLvLQeAAAAAA:IVLO-LH6zQoDTzAhBVQB4isDnu-MhvKtAXPyR3M_rVhsHr33rjru-p3syfWURrJrMABdL-nLjQ">PDF</a> /
-                  <a href="https://arxiv.org/abs/2112.06323">arXiv</a> 
-                  <!-- <a href="https://github.com/hsouri/Sleeper-Agent">code</a> -->
-                  <!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
-                  <br>
-                  <p></p>
-                  <p>
-                    In this paper, we propose a novel threat model called
-                    Joint Space Threat Model (JSTM), which can serve as a
-                    special case of the neural perceptual threat model that does
-                    not require additional relaxation to craft the corresponding adversarial attacks.
-                    We also propose Intepolated Joint Space Adversarial Training
-                    (IJSAT), which applies Robust Mixup strategy and trains
-                    the model with JSA samples.
-                  </p>
-                </td>
-              </tr>
-
-
-
-              <tr onmouseout="deepdive_stop()" onmouseover="deepdive_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='deepdive_image'>
-                      <img src='Data/deepdive_before.png' width="160">
-                    </div>
-                    <img src='Data/deepdive_after.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function deepdive_start() {
-                      document.getElementById('deepdive_image').style.opacity = "0";
-                    }
-
-                    function deepdive_stop() {
-                      document.getElementById('deepdive_image').style.opacity = "1";
-                    }
-                    deepdive_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2203.08235">
-                    <papertitle> A Deep Dive into Dataset Imbalance and Bias in Face Identification
-                    </papertitle>
-                  </a>
-                  <br>
-                  Valeriia Cherepanova,
-                  Steven Reich,
-                  Samuel Dooley,
-                  <strong>Hossein Souri</strong>,
-                  Micah Goldblum,
-                  Tom Goldstein
-                  <br>
-                  <em><strong>AIES</strong></em>, 2023
-                  <br>
-                  <a href="https://arxiv.org/pdf/2203.08235.pdf">PDF</a> /
-                  <a href="https://arxiv.org/abs/2203.08235">arXiv</a>
-                  <!-- <a href="https://github.com/hsouri/Sleeper-Agent">code</a> -->
-                  <!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
-                  <br>
-                  <p></p>
-                  <p>
-                    In this paper, we explore the effects of each kind of
-                    imbalance possible in face identification, and discuss other factors which may impact bias in this
-                    setting.</p>
-                </td>
-              </tr>
-
-
-              <tr onmouseout="sleeper_stop()" onmouseover="sleeper_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='sleep_image'>
-                      <img src='Data/clean_source.png' width="160">
-                    </div>
-                    <img src='Data/patched_source.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function sleeper_start() {
-                      document.getElementById('sleep_image').style.opacity = "0";
-                    }
-
-                    function sleeper_stop() {
-                      document.getElementById('sleep_image').style.opacity = "1";
-                    }
-                    sleeper_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2106.08970">
-                    <papertitle> Sleeper Agent: Scalable Hidden Trigger Backdoors for Neural Networks Trained from
-                      Scratch</papertitle>
-                  </a>
-                  <br>
-                  <strong>Hossein Souri</strong>,
-                  Liam Fowl,
-                  Rama Chellappa,
-                  Micah Goldblum,
-                  Tom Goldstein
-                  <br>
-                  <font color="red"><strong><em>NeurIPS</em>, 2022</strong></font>
-                  <br>
-                  <a href="https://arxiv.org/pdf/2106.08970.pdf">PDF</a> /
-                  <a href="https://arxiv.org/abs/2106.08970">arXiv</a> /
-                  <a href="https://github.com/hsouri/Sleeper-Agent">code</a>
-                  <!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
-                  <br>
-                  <p></p>
-                  <p>
-                    Typical backdoor attacks insert the trigger directly into the training data, although the presence
-                    of such an attack may be visible upon inspection.
-                    We develop a new hidden trigger attack, Sleeper Agent, which employs gradient matching, data
-                    selection, and target model re-training during the crafting process.
-                    Sleeper Agent is the first hidden trigger backdoor attack to be effective against neural networks
-                    trained from scratch.
-                    We demonstrate its effectiveness on ImageNet and in black-box settings.</p>
-                </td>
-              </tr>
-
-
-              <tr onmouseout="prior_stop()" onmouseover="prior_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='prior_image'>
-                      <img src='Data/prior_before.png' width="160">
-                    </div>
-                    <img src='Data/prior_after.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function prior_start() {
-                      document.getElementById('prior_image').style.opacity = "0";
-                    }
-
-                    function prior_stop() {
-                      document.getElementById('prior_image').style.opacity = "1";
-                    }
-                    prior_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2205.10279">
-                    <papertitle> Pre-Train Your Loss: Easy Bayesian Transfer Learning with Informative Priors
-                    </papertitle>
-                  </a>
-                  <br>
-                  Ravid Shwartz-Ziv,
-                  Micah Goldblum,
-                  <strong>Hossein Souri</strong>,
-                  Sanyam Kapoor,
-                  Chen Zhu,
-                  Yann LeCun,
-                  Andrew Gordon Wilson
-                  <br>
-                  <font color="red"><strong><em>NeurIPS</em>, 2022</strong></font>
-                  <br>
-                  <a href="https://arxiv.org/pdf/2205.10279.pdf">PDF</a> /
-                  <a href="https://arxiv.org/abs/2205.10279">arXiv</a> /
-                  <a href="https://github.com/hsouri/BayesianTransferLearning">code</a>
-                  <!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
-                  <br>
-                  <p></p>
-                  <p>
-                    Our Bayesian transfer learning framework transfers knowledge from pre-training
-                    to downstream tasks. To up-weight parameter settings consistent with a
-                    pre-training loss function, we fit a probability distribution over the
-                    parameters of feature extractors to a pre-training loss function and rescale
-                    it as a prior.</p>
-                </td>
-              </tr>
-
-
-
-
-
-              <tr onmouseout="cmeta_stop()" onmouseover="cmeta_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='cmeta_image'>
-                      <img src='Data/cmeta_before.png' width="160">
-                    </div>
-                    <img src='Data/cmeta_after.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function cmeta_start() {
-                      document.getElementById('cmeta_image').style.opacity = "0";
-                    }
-
-                    function cmeta_stop() {
-                      document.getElementById('cmeta_image').style.opacity = "1";
-                    }
-                    cmeta_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://openreview.net/forum?id=gICys3ITSmj">
-                    <papertitle> The Close Relationship Between Contrastive Learning and Meta-Learning
-                    </papertitle>
-                  </a>
-                  <br>
-                  Renkun Ni,
-                  Manli Shu,
-                  <strong>Hossein Souri</strong>,
-                  Micah Goldblum,
-                  Tom Goldstein
-                  <br>
-                  <font color="red"><strong><em>ICLR</em>, 2022</strong></font>
-                  <br>
-                  <a href="https://openreview.net/pdf?id=gICys3ITSmj">PDF</a> /
-                  <a href="https://openreview.net/forum?id=gICys3ITSmj">arXiv</a> /
-                  <a href="https://github.com/RenkunNi/MetaContrastive">code</a>
-                  <!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
-                  <br>
-                  <p></p>
-                  <p>
-                    In this paper, we discuss the close relationship between contrastive learning and meta-learning
-                    under a certain task distribution. We complement
-                    this observation by showing that established meta-learning methods,
-                    such as Prototypical Networks, achieve comparable performance to SimCLR
-                    when paired with this task distribution.</p>
-                </td>
-              </tr>
-
-
-
-
-              <tr onmouseout="mat_stop()" onmouseover="mat_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='mat_image'>
-                      <img src='Data/mat_before.png' width="160">
-                    </div>
-                    <img src='Data/mat_after.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function mat_start() {
-                      document.getElementById('mat_image').style.opacity = "0";
-                    }
-
-                    function mat_stop() {
-                      document.getElementById('mat_image').style.opacity = "1";
-                    }
-                    mat_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://ieeexplore.ieee.org/abstract/document/9798870">
-                    <papertitle> Mutual Adversarial Training: Learning together is better than going alone
-                    </papertitle>
-                  </a>
-                  <br>
-                  Jiang Liu,
-                  Chun Pong Lau,
-                  <strong>Hossein Souri</strong>,
-                  Soheil Feizi,
-                  Rama Chellappa
-                  <br>
-                  <font color="red"><strong><em>IEEE TIFS</em>, 2022</strong></font>
-                  <br>
-                  <a href="https://ieeexplore.ieee.org/abstract/document/9798870">IEEE</a> /
-                  <a href="https://arxiv.org/pdf/2112.05005.pdf">PDF</a> /
-                  <a href="https://arxiv.org/abs/2112.05005">arXiv</a>
-
-                  <!-- <a href="https://github.com/hsouri/Sleeper-Agent">code</a> -->
-                  <!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
-                  <br>
-                  <p></p>
-                  <p>
-                    In this paper, we propose mutual adversarial training (MAT), in which multiple models are trained
-                    together and share the knowledge of adversarial examples to achieve improved robustness.
-                    MAT allows robust models to explore a larger space of adversarial samples, and
-                    find more robust feature spaces and decision boundaries.</p>
-                </td>
-              </tr>
-
-
-
-
-              <tr onmouseout="mine_stop()" onmouseover="mine_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='mine_image'>
-                      <img src='Data/62800.jpg' width="160">
-                    </div>
-                    <img src='Data/Vanilla_GAN_MNIST.jpg' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function mine_start() {
-                      document.getElementById('mine_image').style.opacity = "1";
-                    }
-
-                    function mine_stop() {
-                      document.getElementById('mine_image').style.opacity = "0";
-                    }
-                    bias_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2006.07845">
-                    <papertitle> GANs with Variational Entropy Regularizers: Applications in Mitigating the
-                      Mode-Collapse Issue</papertitle>
-                  </a>
-                  <br>
-                  Pirazh Khorramshahi*,
-                  <strong>Hossein Souri*</strong>,
-                  Rama Chellappa,
-                  Soheil Feizi
-                  <br>
-                  <em>arXiv</em>, 2020
-                  <br>
-                  <a href="https://arxiv.org/pdf/2009.11921.pdf">PDF</a> /
-                  <a href="https://arxiv.org/abs/2009.11921">arXiv</a>
-                  <!-- <a
-                    href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
-                  <br>
-                  <p></p>
-                  <p>GANs often suffer from the mode collapse issue where the generator fails to capture all existing
-                    modes of the input distribution.
-                    To tackle this issue, we take an information-theoretic approach and maximize a variational lower
-                    bound on the entropy of the generated samples to increase their diversity.
-                    We call this approach GANs with Variational Entropy Regularizers (GAN+VER).</p>
-                </td>
-              </tr>
-
-
-
-
-
-              <tr onmouseout="bias_stop()" onmouseover="bias_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='bias_image'>
-                      <img src='Data/bias_after.jpg' width="160">
-                    </div>
-                    <img src='Data/bias_before.jpg' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function bias_start() {
-                      document.getElementById('bias_image').style.opacity = "1";
-                    }
-
-                    function bias_stop() {
-                      document.getElementById('bias_image').style.opacity = "0";
-                    }
-                    bias_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2006.07845v1">
-                    <papertitle> An adversarial learning algorithm for mitigating gender bias in face recognition
-                    </papertitle>
-                  </a>
-                  <br>
-                  Prithviraj Dhar,
-                  Joshua Gleason,
-                  <strong>Hossein Souri</strong>,
-                  Carlos D. Castillo,
-                  Rama Chellappa
-                  <br>
-                  <em>arXiv</em>, 2020
-                  <br>
-                  <a href="https://arxiv.org/pdf/2006.07845v1.pdf">PDF</a> /
-                  <a href="https://arxiv.org/abs/2006.07845v1">arXiv</a>
-                  <!-- <a
-                    href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/dhar2020adversarial.bib">bibtex</a> -->
-                  <br>
-                  <p></p>
-                  <p>A novel approach called "Adversarial Gender De-biasing (AGD)" to help
-                    mitigate gender bias in face recognition by reducing
-                    the strength of gender information in face recognition features.</p>
-                  <br>
-                  <font color="red"><strong>Updated Version</strong></font>
-                  <br>
-                  <a href="https://arxiv.org/abs/2006.07845v2">
-                    <papertitle> Towards Gender-Neutral Face Descriptors for Mitigating Bias in Face Recognition
-                    </papertitle>
-                  </a>
-
-
-                </td>
-              </tr>
-
-
-
-
-              <tr onmouseout="atface_stop()" onmouseover="atface_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='atface_image'>
-                      <img src='Data/atface_after.png' width="160">
-                    </div>
-                    <img src='Data/atface_before.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function atface_start() {
-                      document.getElementById('atface_image').style.opacity = "1";
-                    }
-
-                    function atface_stop() {
-                      document.getElementById('atface_image').style.opacity = "0";
-                    }
-                    atface_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://ieeexplore.ieee.org/abstract/document/9320151">
-                    <papertitle> ATFaceGAN: Single Face Image Restoration and Recognition from Atmospheric Turbulence
-                    </papertitle>
-                  </a>
-                  <br>
-                  Chun Pong Lau,
-                  <strong>Hossein Souri</strong>,
-                  Rama Chellappa
-                  <br>
-                  <em>FG</em>, 2019 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-                  <br>
-                  <a href="https://ieeexplore.ieee.org/abstract/document/9320151">IEEE</a> /
-                  <a href="https://arxiv.org/pdf/1910.03119.pdf">PDF</a> /
-                  <a href="https://arxiv.org/abs/1910.03119">arXiv</a>
-                  <!-- <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/lau2019atfacegan.bib">bibtex</a> -->
-                  <br>
-                  <p></p>
-                  <p>In this work we propose a generative single frame restoration algorithm which disentangles the blur
-                    and deformation due to turbulence and reconstructs a restored image.</p>
-                </td>
-              </tr>
-
-
-
-              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                <tr>
-                  <td width="100%" valign="middle">
-                    <heading>Academic Service</heading>
-                    <!-- <br /> -->
-                    <ul>
-                      <li>Conference Reviewer: CVPR, NeurIPS, ICLR, ICML, ECCV, ICCV, WACV</li>
-                    </ul>
-                    <ul>
-                      <li>Journal Reviewer: Pattern Recognition Journal</li>
-                    </ul>
-                  </td>
-                </tr>
-              </table>
-
-
-              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                <tr>
-                  <td width="100%" valign="middle">
-                    <heading>Research Experience</heading>
-                    <!-- <br /> -->
-
-                    <ul>
-                      <li>Research Assistant, Johns Hopkins University, Aug 2020 - Present</li>
-                    </ul>
-                    <ul>
-                      <li>Research Assistant, University of Maryland, 2018 - 2020</li>
-                    </ul>
-                    <ul>
-                      <li>Research Assistant, University of Tehran, 2016 - 2018</li>
-                    </ul>
-                  </td>
-                </tr>
-              </table>
-
-
-              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                <tr>
-                  <td width="100%" valign="middle">
-                    <heading>Teaching Experience</heading>
-                    <!-- <br /> -->
-                    <ul>
-                      <li>Teaching Assistant, Machine Intelligence, Johns Hopkins University, Spring 2021, Spring 2022
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>Teaching Assistant, Machine Perception, Johns Hopkins University, Fall 2021 </li>
-                    </ul>
-                    <ul>
-                      <li>Teaching Assistant, University of Maryland, College Park, Fall 2018 - Spring 2019</li>
-                    </ul>
-                    <!-- <ul>
-                <li>Teaching Assistant, University of Tehran, 2015 - 2018 </li>
-              </ul> -->
-                  </td>
-                </tr>
-              </table>
-
-
-              <table
-                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                  <tr>
-                    <td style="padding:0px">
-                      <br>
-                      <p style="text-align:center;font-size:small;">
-                        <a href="https://jonbarron.info/">Source code</a>
-                      </p>
-                      <p style="text-align:center;font-size:small;">
-                        Last update: Sept, 2024</p>
-
-                      <!-- hitwebcounter Code START -->
-                      <!-- Started from 1450-->
-                      <!-- 2192 in May 2022-->
-                      <!-- 2402 in July 2022-->
-                      <!-- 2708 in Sep 2022-->
-                      <!-- 2885 in Oct 2022-->
-                      <!-- 2921 in Nov 2022-->
-
-                      <!-- <a href="https://www.hitwebcounter.com" target="_blank">
-                        <img
-                          src="https://hitwebcounter.com/counter/counter.php?page=7892024&style=0006&nbdigits=9&type=page&initCount=1450"
-                          title="Free Counter" Alt="web counter" border="0" /></a> -->
-
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-        </td>
-      </tr>
-  </table>
 </body>
 
 </html>
